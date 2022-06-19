@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <!--Styles-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Lista de tarefas</h1>
+            <div class="preencher">
+                <input type="text" id="caixaTexto" placeholder="Adicionar nova tarefa">
+                <button id="botaoAdicionar">✚</button>
+            </div>
+            <select id="listaSuspensa" hidden>
+                <option value="opcao0" selected>Selecione uma opção</option>
+                <option value="opcao1">Marcar todas as tarefas como realizadas.</option>
+                <option value="opcao2">Marcar todas as tarefas como não realizadas.</option>
+                <option value="opcao3">Excluir todas as tarefas.</option>
+            </select>
+
+            <ul id="listaTarefas">
+
+            </ul>
+        </div>
+    </div>
+    <!--Javascript-->
+    <script src="index.js"></script>
+</body>
+</html>

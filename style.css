@@ -1,0 +1,159 @@
+body {
+    background-image: radial-gradient(circle, rgb(177, 121, 130), rgb(156, 156, 206));
+  }
+
+  .container{
+    position:absolute;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .box{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding:50px 130px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 10px 20px rgb(165, 96, 107);
+  }
+
+  h1{
+    font-family:'Dosis', sans-serif;
+    font-size:70px;
+    color:rgb(117, 117, 190);
+  }
+
+  .preencher{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #caixaTexto{
+    box-sizing: border-box;
+    min-width:450px;
+    min-height:30px;
+    font-family:'Dosis', sans-serif;
+    font-size:25px;
+    border: 2px rgb(117, 117, 190);
+    margin:0px 5px;
+    padding: 10px;
+    background-color:rgb(184, 184, 231);
+    color:white;
+  }
+
+  input::placeholder{
+    color:white;
+  }
+
+  #botaoAdicionar{
+    height:45px;
+    width:50px;
+    color:white;
+    background-color: rgb(104, 104, 190);
+    border: 2px black;
+    border-radius: 5px;
+    cursor:pointer;
+  }
+
+  #botaoAdicionar:hover{
+    background-color: rgb(165, 96, 107); 
+  }
+
+ 
+  li{
+    font-family:'Dosis', sans-serif;
+    font-size:22px;
+    text-align: center;
+    border: 2px black;
+    min-width:450px;
+    min-height:60px;
+    box-shadow: 2px 2px 10px rgb(117, 117, 190);
+    margin:15px;
+   } 
+
+   li:hover{
+    background-color: rgb(212, 157, 167);
+    color:white;
+   }
+    
+  .naoRealizada{
+    list-style-type: ' ☐    ';
+    cursor:pointer;
+    text-indent:20px;
+    font-size: 25px;
+  }
+
+  .realizada{
+    list-style-type: '☑    ';
+    cursor:pointer;
+    text-indent:20px;
+    text-decoration: line-through;
+    color:gray;
+    font-size: 25px;
+  }
+
+  .remover{
+    margin:20px;
+    height:35px;
+    width:35px;
+    color:white;
+    background-color: rgb(117, 117, 190);
+    border: 2px black;
+    border-radius: 5px;
+    cursor:pointer;
+  }
+
+  .remover:hover{
+    background-color: rgb(165, 96, 107); 
+  }
+
+  #listaSuspensa{
+    width:500px;
+    box-sizing: border-box;
+    font-family:'Dosis', sans-serif;
+    font-size:15px;
+    border: 2px rgb(117, 117, 190);
+    margin:15px 5px;
+    padding: 10px;
+    background-color:rgb(212, 157, 167);
+    color:white;
+  }
+
+
+/*Media Queries*/
+
+
+  @media (max-width:550px){
+    .box{
+      max-width: 100px;
+    }
+
+    h1{
+      font-size:40px;
+      width:250px;
+    }
+
+    #caixaTexto {
+      min-width:100px;
+      font-size:20px;
+    }
+
+    #listaSuspensa{
+      max-width:270px;
+      font-size:15px;
+    }
+
+    li {
+      max-height:50px;
+      min-width:230px;
+      font-size:15px;
+    }
+  }
