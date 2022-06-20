@@ -3,6 +3,8 @@ const botaoAdicionar = document.querySelector('#botaoAdicionar');
 const listaTarefas = document.querySelector('#listaTarefas');
 const listaSuspensa = document.querySelector('#listaSuspensa');
 
+// Capturando o texto do input
+
 botaoAdicionar.addEventListener('click', function (){
     const textoDaTarefa = caixaTexto.value;
     caixaTexto.value = '';
@@ -10,6 +12,9 @@ botaoAdicionar.addEventListener('click', function (){
     exibeOcultaListaSuspensa();
     caixaTexto.focus();
 })
+
+
+// Adicionar e personalizar tarefa
 
 function adicionarTarefa(textoDaTarefa){
     const elementoLI = document.createElement('li');
@@ -35,6 +40,9 @@ function adicionarTarefa(textoDaTarefa){
     return elementoLI;
 }
 
+
+// Remover tarefa
+
 function adicionarBotaoRemover(){
     const botaoRemover = document.createElement('button');
     botaoRemover.textContent = '✕';
@@ -45,10 +53,11 @@ function adicionarBotaoRemover(){
         exibeOcultaListaSuspensa();
     })
 
-    
-
     return botaoRemover;
 }
+
+
+// Exibir lista suspensa
 
 function exibeOcultaListaSuspensa(){
     const elementoSPAN = document.querySelector('#tarefa');

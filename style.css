@@ -1,16 +1,15 @@
 body {
     background-image: radial-gradient(circle, rgb(177, 121, 130), rgb(156, 156, 206));
+    
   }
 
   .container{
-    position:absolute;
-    box-sizing: border-box;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .box{
@@ -28,6 +27,7 @@ body {
     font-family:'Dosis', sans-serif;
     font-size:70px;
     color:rgb(117, 117, 190);
+    /* margin-top:20px; */
   }
 
   .preencher{
@@ -71,30 +71,32 @@ body {
   li{
     font-family:'Dosis', sans-serif;
     font-size:22px;
-    text-align: center;
+    text-align: left;
     border: 2px black;
-    min-width:450px;
-    min-height:60px;
     box-shadow: 2px 2px 10px rgb(117, 117, 190);
     margin:15px;
+    padding: 20px;
+    list-style-position: inside;
+    min-width:600px;
+    max-width:700px;
    } 
 
    li:hover{
     background-color: rgb(212, 157, 167);
     color:white;
    }
-    
+
   .naoRealizada{
-    list-style-type: ' ☐    ';
+    list-style-type: '☐ ';
     cursor:pointer;
-    text-indent:20px;
+    text-indent:10px;
     font-size: 25px;
   }
 
   .realizada{
-    list-style-type: '☑    ';
+    list-style-type: '☑ ';
     cursor:pointer;
-    text-indent:20px;
+    text-indent:10px;
     text-decoration: line-through;
     color:gray;
     font-size: 25px;
@@ -152,7 +154,6 @@ body {
     }
 
     li {
-      max-height:50px;
       min-width:230px;
       font-size:15px;
     }
